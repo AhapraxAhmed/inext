@@ -47,7 +47,7 @@ const Hero = () => {
                     Iphone 16 pro
                 </p>
 
-                <div className="md:w-10/12 w-9/12">
+                <div className="md:w-10/12 sm:w-5/7 w-9/12">
                     <video
                         autoPlay
                         muted

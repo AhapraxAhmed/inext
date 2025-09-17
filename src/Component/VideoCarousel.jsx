@@ -59,10 +59,10 @@ const VideoCarousel = () => {
                         gsap.to(videoDivRef.current[videoId], {
                             width:
                                 window.innerWidth < 760
-                                    ? "10vw" // mobile
+                                    ? "10vw"
                                     : window.innerWidth < 1200
-                                        ? "10vw" // tablet
-                                        : "4vw", // laptop
+                                        ? "10vw"
+                                        : "4vw",
                         });
 
                         gsap.to(span[videoId], {
@@ -144,7 +144,7 @@ const VideoCarousel = () => {
 
     return (
         <>
-            <div className="flex items-center">
+            <div className="apnaVideo">
                 {hightlightsSlides.map((list, i) => (
                     <div key={list.id} id="slider" className="sm:pr-20 pr-10">
                         <div className="video-carousel_container carousel">

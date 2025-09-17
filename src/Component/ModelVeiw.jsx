@@ -13,7 +13,7 @@ const ModelVeiw = ({ index, groupRef, gsapType,
             index={index}
             id={gsapType}
             className={`w-full h-full absolute ${index === 2 ?
-                'right-[100%]' : ''}`}
+                'right-[-100%]' : ''}`}
         >
 
             <ambientLight intensity={1} />

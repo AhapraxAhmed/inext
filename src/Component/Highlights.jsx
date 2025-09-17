@@ -18,7 +18,7 @@ const Highlight = () => {
     return (
         <section
             id="highlight"
-            className="w-screen h-screen bg-zinc-900 
+            className="w-screen h-[110vh] margin-forpatanahi bg-zinc-900 
             common-padding overflow-hidden"
         >
             <div className="screen-max-width">

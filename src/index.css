@@ -28,6 +28,7 @@ canvas {
 
 }
 
+
 @layer utilities {
     .flex-center {
         @apply flex items-center justify-center;
@@ -57,13 +58,13 @@ canvas {
         @apply text-gray-400 lg:text-6xl md:text-5xl text-3xl lg:mb-0 mb-5 font-medium opacity-0 translate-y-20;
     }
 
-    .feature-text {
+    /* .feature-text {
         @apply text-gray-400 max-w-md text-lg md:text-xl font-semibold opacity-0 translate-y-[100px];
     }
 
     .feature-text-container {
         @apply w-full items-center flex-col md:flex-row mt-10 md:mt-16 gap-5;
-    }
+    } */
 
     .hero-title {
         @apply text-center font-semibold text-3xl text-gray-300 opacity-0 max-md:mb-10
@@ -119,6 +120,90 @@ canvas {
 
 }
 
+/* FEATURES CLASSES */
+.explore {
+    margin-bottom: 5rem;
+    font-size: 3.3rem;
+}
+
+.forged {
+    margin-bottom: 1rem;
+}
+
+.feature-text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+    .feature-text-container {
+        margin-top: 4rem;
+    }
+}
+
+.feature-text {
+    color: #9ca3af;
+    max-width: 28rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+@media (min-width: 768px) {
+    .feature-text {
+        font-size: 1.25rem;
+    }
+}
+
+/* Highlight Classes */
+.section-heading {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+@media (max-width: 639px) {
+
+    .section-heading,
+    .link {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-heading {
+        font-size: 2rem;
+        padding-left: 40px;
+    }
+
+    .link {
+        padding-left: 40px;
+    }
+}
+
+@media (width < 768px) {
+    .h-screen {
+        height: 80vh;
+    }
+}
+
+@media (width > 768px) {
+    .section-heading {
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+
+    .link {
+        padding-right: 30px;
+    }
+}
+
+/* MODEL CLASSES */
 .size {
     background-color: #141414;
     margin-left: 12px;
@@ -129,15 +214,20 @@ canvas {
     background-color: #141414;
 }
 
-.margin {
-    margin-bottom: 20px;
-}
-
 .margin1 {
     margin-left: 4.55px;
     margin-right: 4.55px;
 }
 
+.margin {
+    margin-bottom: 20px;
+}
+
+.marginbottom {
+    margin-bottom: 50px;
+}
+
+/* VIDEOCROUSEL CLASSES */
 .control-btn {
     background-color: rgb(65, 66, 66);
     border-radius: 50%;
@@ -145,6 +235,17 @@ canvas {
     padding: 10px;
     margin-left: 10px;
     position: relative;
+}
+
+.carousel {
+    position: relative;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.apnaVideo {
+    display: flex;
+    align-items: center;
 }
 
 .centered-btn {
@@ -167,19 +268,17 @@ canvas {
 @media (max-width: 600px) {
     .control-btn {
         width: 30px;
+        display: flex;
         height: 30px;
         padding: 8px;
-        margin-left: 5px;
     }
 
     .rounded-container {
         padding: 1rem;
         gap: 0.5rem;
     }
-
-    .centered-btn {
-        flex-direction: column;
-        margin-top: 1rem;
+    .margin-forpatanahi{
+        height: 80vh;
     }
 }
 
@@ -208,10 +307,12 @@ canvas {
     }
 }
 
+/* NAVBAR CLASSES */
 .navlist {
     padding-left: 18px;
 }
 
+/* HERO CLASSES */
 .btn {
     background-color: #2563eb;
     color: white;
@@ -226,33 +327,49 @@ canvas {
     margin-bottom: 10px;
 }
 
-.padding {
-    padding-top: 8px;
-}
-
 .btn:hover {
     background-color: #1d4ed8;
 }
 
-.carousel {
-    margin-left: 50px;
-    text-align: center;
-    justify-content: center;
+/* Feature Classes */
+.section-heading1 {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
-
-.marginbottom {
-    margin-bottom: 20px;
+@media (max-width: 600px) {
+   .section-heading1{
+    font-size: 32px;
+   }
 }
-
-.section-heading {
-    padding-top: 30px;
-    padding-bottom: 20px;
-}
-
 .link {
     padding-bottom: 20px;
 }
 
 .height {
     height: 100vh
+}
+
+/* Chip Classe */
+.my {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.mt-10 {
+    margin-top: 16px;
+}
+
+/* Footer Classes */
+.my-7 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.marginForFooter {
+    margin-bottom: 10px;
+}
+
+.mx-2 {
+    margin-left: 4px;
+    margin-right: 4px;
 }

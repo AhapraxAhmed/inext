@@ -55,7 +55,7 @@ const Model = () => {
     }, [])
 
     return (
-        <section className="common-padding">
+        <section className="common-padding mt-12">
             <div className="screen-max-width">
                 <h1 id="heading" className="section-heading">
                     TAKE A LOOK
@@ -98,7 +98,7 @@ const Model = () => {
                         </Canvas>
                     </div>
 
-                    <div className="mx-auto w-full marginbottom">
+                    <div className="mx-auto w-full margin">
                         <p className="text-sm font-light text-center margin">
                             {model.title}
                         </p>
