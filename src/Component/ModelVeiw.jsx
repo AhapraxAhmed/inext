@@ -1,6 +1,6 @@
 import { OrbitControls, PerspectiveCamera, View } from "@react-three/drei"
 import Lights from "./Lights"
-import IPhone from "./Iphone"
+import IPhone from "IPhone"
 import Loader from "./Loader"
 import * as THREE from 'three'
 import { Suspense } from "react"
