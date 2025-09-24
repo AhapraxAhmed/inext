@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { useGLTF, useTexture } from '@react-three/drei'
 import * as THREE from 'three';
 function Model(props) {
@@ -6,7 +6,6 @@ function Model(props) {
     const texture = useTexture(props.item.img);
     useEffect(() => {
         Object.entries(materials).map((material) => {
-            // these are the material names that can't be changed color
             if (
                 material[0] !== "zFdeDaGNRwzccye" &&
                 material[0] !== "ujsvqBWRMnqdwPx" &&
